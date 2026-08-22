@@ -63,7 +63,7 @@ SKIP_SUFFIXES = (
     ".otf",
     ".pyc",
 )
-INITIAL_VERSION = "0.1.0"
+INITIAL_VERSION = "0.0.0"  # release-please bumps the first feat/fix to 0.1.0
 
 NAME_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9 _-]*$")
 REPO_RE = re.compile(r"^[A-Za-z0-9_.-]+/[A-Za-z0-9_.-]+$")

@@ -23,7 +23,8 @@ python3 scripts/new_game.py --name "Your Game" --repo <you>/<your-game> --descri
 
 This rewrites the project name (all spellings), the template's repository name and
 URLs (README title, badges, the GitHub Pages link), the macOS bundle identifier, resets
-`version.txt` / `CHANGELOG.md` to `0.1.0`, and deletes this file. `LICENSE` and `ASSETS.md`
+`version.txt` / `CHANGELOG.md` to `0.0.0` (your first `feat:` release becomes 0.1.0), and
+deletes this file. `LICENSE` and `ASSETS.md`
 are left alone on purpose — update the copyright holder and credits by hand. The example game's code
 stays — it is your working reference until you replace it.
 
