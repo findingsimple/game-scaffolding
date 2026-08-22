@@ -157,6 +157,15 @@ a release; `docs:`/`chore:` alone never will.
 Settings → Pages → Source is *GitHub Actions* and the repository is public (the deploy job
 is skipped for private repos). Browsers cache the old `.wasm` aggressively — hard-reload.
 
+**The release PR's CI shows "action required".** GitHub asks a human to approve workflow
+runs for PRs opened by the Actions bot. Approve it from the PR's checks tab, or just merge —
+the PR only touches `version.txt` and `CHANGELOG.md`.
+
+**Before 1.0.0.** `release-please-config.json` sets `initial-version: 0.1.0`,
+`bump-minor-pre-major` and `bump-patch-for-minor-pre-major`: `feat:` → 0.x+1.0, `fix:` →
+0.x.y+1, and a breaking change bumps minor, not major, until you ship 1.0.0 by hand
+(`Release-As: 1.0.0` in a commit footer).
+
 **`Unable to resolve action`.** A Dependabot bump or a deleted tag; open the Dependabot PR
 and check the action's releases page.
 
